@@ -1,0 +1,7 @@
+/node_modules/
+/binutils-2.37.tar.xz
+/gcc-11.2.0.tar.xz
+/gdb-11.1.tar.xz
+/newlib-4.1.0.tar.gz
+/package-lock.json
+/pnpm-lock.yaml
