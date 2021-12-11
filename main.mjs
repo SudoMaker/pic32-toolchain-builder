@@ -279,7 +279,7 @@ const doBuild = () => {
 	if (argv.targetCompileFlags) {
 		cflags = argv.targetCompileFlags;
 	} else {
-		cflags = "-Os -march=mips32r2 ";
+		cflags = "-Os -mfp64 -march=mips32r2 ";
 
 		switch (argv.machineCodeMode) {
 			case "micromips":
@@ -375,11 +375,10 @@ const doBuild = () => {
 
 		makeAndInstall("newlib", environ);
 
-		{
-			buildGCC(environ, null);
-		}
+		// {
+		// 	buildGCC(environ, null);
+		// }
 	}
-
 
 	{
 		const srcDirGDB = determineSrcDirName("gdb");
